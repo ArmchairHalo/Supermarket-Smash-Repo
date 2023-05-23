@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     //It must be marked public so other scripts can access it
     public void Kill()
     {
-        //This will destroy the game obkect that it is attached to
+        //This will destroy the game object that it is attached to
         Destroy(gameObject);
     }
 }

@@ -53,4 +53,13 @@ public class PlayerHealth : MonoBehaviour
         //This will destroy the game object that it is attached to
         Destroy(gameObject);
     }
+
+
+    //get function to give information to the calling code
+    //the int means that an integer will be given back
+    //the return is what will be given back
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
 }

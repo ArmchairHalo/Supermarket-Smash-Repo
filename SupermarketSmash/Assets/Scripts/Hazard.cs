@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Hazard : MonoBehaviour
 {
+    //This will be the amount of damage the hazard does 
+    //public - editable in unity
+    //int - whole number 
+    public int hazardDamage;
 
     private void Start()
     {
@@ -30,7 +34,7 @@ public class Hazard : MonoBehaviour
             //Which means this object is indeed the player
             Debug.Log("player has collided");
             //Therefore perform our action
-            player.Kill();
+            player.ChangeHealth(-hazardDamage);
         }
     }
 }

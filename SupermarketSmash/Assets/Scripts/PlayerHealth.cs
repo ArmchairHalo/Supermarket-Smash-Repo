@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     //Public - shown in the unity editor and accessible from other scripts
     //int - whole number
     public int startingHealth;
+    //Can be edited in unity
+    public string gameOverScene;
 
     //This will be the players current health
     //and will change as the game goes on
@@ -38,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, startingHealth);
 
         //if our health drops to 0, that means the player should die
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
         {
             //we call the kill function to kill the player
             Kill();
@@ -52,6 +55,9 @@ public class PlayerHealth : MonoBehaviour
     {
         //This will destroy the game object that it is attached to
         Destroy(gameObject);
+
+        //Load the game over scene
+        SceneManager.LoadScene(gameOverScene);
     }
 
 

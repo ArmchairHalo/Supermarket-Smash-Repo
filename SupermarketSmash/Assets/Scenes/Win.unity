@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 1201929419}
   - component: {fileID: 1201929418}
   m_Layer: 5
-  m_Name: Game over text
+  m_Name: You win text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,8 +833,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.046, y: 220.6561}
-  m_SizeDelta: {x: 192.092, y: 46.6879}
+  m_AnchoredPosition: {x: 20, y: 220.49866}
+  m_SizeDelta: {x: 347.7502, y: 47.0028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201929418
 MonoBehaviour:
@@ -869,7 +869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Game Over '
+  m_Text: 'You win congratulations '
 --- !u!222 &1201929419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1074,7 +1074,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6886792, g: 0.12088194, b: 0.10720008, a: 0}
+  m_BackGroundColor: {r: 0.3795328, g: 0.735849, b: 0.3436276, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

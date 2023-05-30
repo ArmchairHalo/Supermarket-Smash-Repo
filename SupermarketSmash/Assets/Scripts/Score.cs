@@ -35,4 +35,9 @@ public class Score : MonoBehaviour
         //Update the display of the score based on the numerical
         scoreDisplay.text = scoreValue.ToString();
     }
+
+    public int GetScore()
+    {
+        return scoreValue;
+    }
 }
